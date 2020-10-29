@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Вёрстка карт ЦВТС</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./favicons/favicon1.png" type="image/x-icon">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<!-- head карты -->
+<link rel="shortcut icon" href="./uploads/favicons/favicon1.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="./uploads/favicons/favicon-ios.png">
+<link rel="apple-touch-startup-image" href="./uploads/favicons/app-bg.png">
+<meta name="apple-mobile-web-app-title" content="Карта СШХ">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/touch-menu-la@0.5.0/src/css/touch-menu-la.min.css">
+<link rel="stylesheet" href="./js/mapstyles.css">
+<!-- end of head карты -->
+
+</head>
+<body class="mso-body-all mso-body-page_404">
+<div class="my-all-container layout-center-wrap">
+	<div class="wrap bg-white">
+		<div class="main flex flex-wrap-tablet">
+		<div class="content flex-order2 flex-order1-tablet w50 w100-tablet pad40">
+			<div id="elmsk">
+				
+				<!-- body карты -->
+
+				<div class="appheader">
+					<div class="appheader__title">
+						<div class="container appheader__container">
+							<div class="appheader__left">
+								<a href="#" class="hamburger-menu">
+									<div class="hamburger-menu__bars"></div>
+								</a>
+								<a href="#" class="hamburger-menu-desktop">
+									<div class="hamburger-menu-desktop__bars"></div>
+								</a>
+								
+							</div>
+							<div class="appheader__right">
+								<a class="appheader__logo" href="http://rut.digital" target="_blank">
+									<div class="appheader__logo-pic"></div>
+								</a>
+								<div class="appheader__name">
+									<div class="appheader__name_phones">Название ресурса (телефоны)</div>
+									<div class="appheader__name_tablets">Название ресурса (планшеты)</div>
+									<div class="appheader__name_full">Название ресурса (десктоп)</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="appheader__menu menu">
+						<div class="container menu__container">
+							<ul class="menu__list" id="menu-list">
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div id="fullmenu" class="touch-menu-la">
+					<div class="container fullmenu__container"><a class="closebutton fullmenu__closebutton" id="fullMenuCloseButton" href="#"></a>
+						<ul class="fullmenu__list" id="fullmenu-list">
+						</ul>
+					</div>
+				</div>
+				<section class="mainsection">
+					<div id="fullmenu_desktop" class="fullmenu-desktop">
+						<div class="container fullmenu-desktop__container"><a class="closebutton fullmenu-desktop__closebutton" id="fullMenuDesktopCloseButton" href="#"></a>
+							<ul class="fullmenu-desktop__list" id="fullmenu-desktop-list">
+							</ul>
+						</div>
+					</div>
+					<div id='map'></div>
+				</section>
+				<script src="https://cdn.jsdelivr.net/npm/touch-menu-la@0.5.0/lib/hammerjs/hammer.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/touch-menu-la@0.5.0/src/js/touch-menu-la.min.js"></script>
+				<script src="/js/mapscripts.js"></script>
+				<script type="template" id="overlayTemplate">
+					<div class="overlay">
+						<div class="overlay__block">
+							<div class="overlay__content"></div>
+							<a class="closebutton overlay__closebutton" href="#"></a>
+							<a href="#" class="btn overlay__btn">Закрыть</a>
+						</div>
+					</div>
+				</script>
+				<!-- body карты -->
+
+			</div>		
+		</div>
+
+	</div>
+</div></div>
+<script type="template" id="overlayTemplate">
+	<div class="overlay">
+		<div class="overlay__block">
+			<div class="overlay__content"></div>
+			<a class="closebutton overlay__closebutton" href="#"></a>
+			<a href="#" class="btn overlay__btn">Закрыть</a>
+		</div>
+	</div>
+</script>
+</body>
+</html>

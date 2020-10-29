@@ -1,0 +1,207 @@
+<html lang="ru">
+<!-- Вёрстка меню с логином и паролем -->
+<head>
+  <meta charset="UTF-8">
+  <title>admin:adminadmin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="MaxSite CMS">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="/favicons/favicon1.png" type="image/x-icon">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Ubuntu', Helvetica, sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.42;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    button {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      outline: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    p {
+      line-height: 1;
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    input, textarea {
+      outline: none;
+      border: none;
+    }
+
+    .main-content-only {
+      position: relative;
+    }
+
+    .mso-type-loginform {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #2d3c4e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mso-page-only {
+      width: 480px;
+      background: #fff;
+      padding: 52px 68px;
+
+    }
+    
+    @media screen and (max-width: 480px) {
+      .mso-page-only {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+      }
+    }
+
+    .mso-loginform {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h3 {
+      margin-bottom: 30px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mso-loginform-login span, .mso-loginform-password span {
+      font-weight: 600;
+      opacity: .3;
+    }
+
+    .mso-loginform-login input, .mso-loginform-password input {
+      padding: 14px 0;
+      border-bottom: 1px solid #414c63;
+      margin-bottom: 35px;
+      font-size: 16px;
+      border-radius: 0px;
+    }
+
+    .mso-loginform-submit {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .mso-loginform-submit button {
+      display: flex;
+      justify-content: center;
+      background-color: #be1622;
+      padding: 17px 35px;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 3px;
+      min-width: 150px;
+      box-shadow: 0 2px 2px 0 rgba(190,22,34,0.14), 0 3px 1px -2px rgba(190,22,34,0.2), 0 1px 5px 0 rgba(190,22,34,0.12);
+      -webkit-transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+      -webkit-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: box-shadow;
+    }
+
+    .mso-loginform-submit button:hover {
+      box-shadow: 0 14px 26px -12px rgba(190,22,34,0.42), 0 4px 23px 0 rgba(0,0,0,0.12), 0 8px 10px -5px rgba(190,22,34,0.2);
+    }
+
+    input:-internal-autofill-selected {
+      background-color: #fff !important;
+    }
+  </style>
+</head>
+
+<body class="main-content-only">
+  <div class="mso-type-loginform">
+    <div class="mso-page-only">
+      <div class="mso-page-content mso-type-loginform-content">
+        <div class="mso-loginform">
+          <h3>Введите свой логин и пароль</h3>
+          <div class="mso-loginform-common">
+            <form method="post" action="/login" name="flogin">
+              <input type="hidden" value="/" name="flogin_redirect">
+              <input type="hidden" value="35b23f4cd4e186df752debd1d15b2922" name="flogin_session_id">
+              <p class="mso-loginform-login"><label><span>Логин</span><input type="text" value="" name="flogin_user"
+                    required=""></label></p>
+              <p class="mso-loginform-password"><label><span>Пароль</span><input type="password" value=""
+                    name="flogin_password" required=""></label></p>
+              <p class="mso-loginform-submit"><span></span><button type="submit" name="flogin_submit">Войти</button></p>
+              <p class="mso-loginform-end"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- class="mso-type-loginform" -->
+</body>
+
+</html>

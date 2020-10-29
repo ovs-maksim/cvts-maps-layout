@@ -1,0 +1,31 @@
+.closebutton {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	width: rem(20px);
+	height: rem(20px);
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+	@include phones {
+		display: flex;
+	}
+
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		width: rem(22px);
+		height: rem(4px);
+		background-color: #c1c2c2;
+		border-radius: 6px;
+	}
+
+	&:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+}

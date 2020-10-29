@@ -1,0 +1,61 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47,50,52,.92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	z-index: 10000;
+	
+	&__block {
+		position: relative;
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+		background: #ffffff;
+		border-radius: 5px;
+		max-width: 90%;
+		max-height: 90%;
+		padding: rem(21px);
+
+		@include tablets {
+			max-width: 61%;
+		}
+
+		@include phones {
+			max-width: 96%;
+		}
+	}
+
+	&__content {
+		color: #2f3234;
+		line-height: 1.71;
+		font: rem(14px) 'Open Sans', sans-serif;
+		margin: 0;
+		width: 100%;
+		overflow: scroll;
+	}
+
+	&__content > .reviews__text {
+		margin-bottom: 0;
+
+		@include phones {
+			display: block;
+		}
+	}
+
+	&__btn {
+		display: none;
+		margin-top: rem(17px);
+	}
+
+	&__closebutton {
+		&:before, &:after {
+			background: $moscowred;
+		}
+		display: none;
+	}
+}
